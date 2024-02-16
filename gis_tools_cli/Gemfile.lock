@@ -1,0 +1,25 @@
+PATH
+  remote: .
+  specs:
+    gis-tools (0.0.0)
+      highline
+      terminal-table
+      thor
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    highline (2.1.0)
+    terminal-table (3.0.2)
+      unicode-display_width (>= 1.1.1, < 3)
+    thor (1.3.0)
+    unicode-display_width (2.5.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  gis-tools!
+
+BUNDLED WITH
+   2.1.2

@@ -1,0 +1,17 @@
+require_relative 'lib/gis/config/version'
+
+GEM_NAME = "gis-tools"
+
+task :default => :build
+
+task :build do
+  system "gem build " + GEM_NAME + ".gemspec"
+end
+
+task :install => :build do
+  system "gem install " + GEM_NAME + "-" + GISTools::VERSION + ".gem"
+end
+
+task :clean do 
+  system "rm *.gem"
+end
